@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nhatntph10460_duanmau">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.BillDetailActivity"
+            android:theme="@style/AppNoTheme"></activity>
+        <activity
+            android:name=".ui.UserFixActivity"
+            android:label="Cập nhật thông tin người dùng"
+            android:parentActivityName=".ui.UserManagementActivity"></activity>
+        <activity
+            android:name=".ui.FixBillActivity"
+            android:label="Cập nhật thông tin Hóa đơn"
+            android:parentActivityName=".ui.BillManagementActivity" />
+        <activity
+            android:name=".ui.AddBillActivity"
+            android:label="Thêm thông tin Hóa đơn"
+            android:parentActivityName=".ui.BillManagementActivity" />
+        <activity
+            android:name=".ui.FixTypeActivity"
+            android:label="Cập nhật thông tin Thể loại"
+            android:parentActivityName=".ui.TypeManagementActivity" />
+        <activity
+            android:name=".ui.AddTypeActivity"
+            android:label="Thêm thông tin Thể loại"
+            android:parentActivityName=".ui.TypeManagementActivity" />
+        <activity
+            android:name=".ui.FixBookActivity"
+            android:label="Cập nhật thông tin Sách"
+            android:parentActivityName=".ui.BookManagementActivity" />
+        <activity
+            android:name=".ui.AddBookActivity"
+            android:label="Thêm thông tin Sách"
+            android:parentActivityName=".ui.BookManagementActivity" />
+        <activity
+            android:name=".ui.StatisticalActivity"
+            android:label="Thống kê"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.BillManagementActivity"
+            android:label="Quản lý Hóa đơn"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".ui.TypeManagementActivity"
+            android:label="Quản lý Thể loại"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".ui.BookManagementActivity"
+            android:label="Quản lý Sách"
+            android:parentActivityName=".ui.HomeActivity"
+            android:theme="@style/AppNoTheme" />
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:label="Sign up"
+            android:parentActivityName=".ui.SignInActivity" />
+        <activity
+            android:name=".ui.SignInActivity"
+            android:label="Sign in" />
+        <activity
+            android:name=".ui.UserManagementActivity"
+            android:label="Quản lý người dùng"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="Phương Nam" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppNoTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
